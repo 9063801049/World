@@ -1,5 +1,5 @@
 <?php
-$k=$_POST['id'];
+$k=$_GET['id'];
 $k=trim($k);
 $conn=mysqli_connect("fdb32.awardspace.net","3865939_db","Nani@116","3865939_db");
 $sql="select * from covidcases1 where Country='{$k}'";
