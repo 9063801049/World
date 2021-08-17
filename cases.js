@@ -3,7 +3,7 @@ function selectCountry()
 var x=document.getElementById("case").value;
 $.ajax({
         url:"showCountry.php",
-        method:"POST",
+        method:"GET",
         data:{
                 id : x
         },
