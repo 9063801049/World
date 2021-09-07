@@ -1,7 +1,7 @@
 <?php
 $conn=mysqli_connect("fdb32.awardspace.net","3865939_db","Nani@116","3865939_db");
-$sql="select Country from covidcases1";
-$res=mysqli_query($conn,$sql)
+$sql="select Country from covidcases";
+$res=mysqli_query($conn,$sql);
 ?>
 <!DOCTYPE html>
 
