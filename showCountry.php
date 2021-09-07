@@ -2,7 +2,7 @@
 $k=$_POST['id'];
 $k=trim($k);
 $conn=mysqli_connect("fdb32.awardspace.net","3865939_db","Nani@116","3865939_db");
-$sql="select * from covidcases1 where Country='{$k}'";
+$sql="select * from covidcases where Country='{$k}'";
 $res=mysqli_query($conn,$sql);
 while($rows=mysqli_fetch_array($res)){
 
@@ -17,6 +17,6 @@ while($rows=mysqli_fetch_array($res)){
          
  <?php
  }
- echo $sql
+ echo $sql;
  ?>
  
